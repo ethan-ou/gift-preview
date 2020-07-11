@@ -1,4 +1,10 @@
-import { TemplateOptions, TextFormat, Choice, Numerical } from "./types";
+import {
+  TemplateOptions,
+  TextFormat,
+  Choice,
+  Numerical,
+  NumericalFormat,
+} from "./types";
 import QuestionContainer from "./QuestionContainer";
 import Title from "./Title";
 import TextType from "./TextType";
@@ -7,7 +13,7 @@ import GlobalFeedback from "./GlobalFeedback";
 type NumericalOptions = TemplateOptions & Numerical;
 
 interface NumericalAnswerOptions extends TemplateOptions {
-  choices: Choice[];
+  choices: Choice[] | NumericalFormat;
 }
 
 export default function Numerical(options: NumericalOptions): string {
