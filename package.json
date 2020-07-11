@@ -1,0 +1,51 @@
+{
+  "name": "gift-preview",
+  "version": "0.0.1",
+  "description": "A library to display GIFT questions as HTML & CSS.",
+  "main": "out/index.js",
+  "scripts": {
+    "start": "npm run build && node ./out/index.js",
+    "build": "tsc -p ./tsconfig.json",
+    "test": "jest",
+    "lint": "eslint . --fix",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "prettier": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ethan-ou/gift-preview.git"
+  },
+  "author": "ethan-ou",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ethan-ou/gift-preview/issues"
+  },
+  "homepage": "https://github.com/ethan-ou/gift-preview#readme",
+  "dependencies": {
+    "@types/marked": "^1.1.0",
+    "marked": "^1.1.0",
+    "nanoid": "^3.1.10"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.0",
+    "@types/node": "^14.0.13",
+    "@typescript-eslint/eslint-plugin": "^3.2.0",
+    "@typescript-eslint/parser": "^3.2.0",
+    "eslint": "^7.2.0",
+    "eslint-plugin-import": "^2.21.2",
+    "husky": "^4.2.5",
+    "jest": "^26.0.1",
+    "prettier": "^2.0.5",
+    "ts-jest": "^26.1.0",
+    "typescript": "^3.9.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run prettier"
+    }
+  },
+  "files": [
+    "out/**/*"
+  ]
+}
