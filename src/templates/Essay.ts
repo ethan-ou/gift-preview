@@ -18,7 +18,7 @@ export default function Essay(options: EssayOptions): string {
       `<p>${TextType({
         text: stem,
       })}</p>`,
-      `<textarea></textarea>`,
+      `<textarea placeholder="Enter your answer here..."></textarea>`,
       GlobalFeedback({ feedback: globalFeedback }),
     ],
   })}`;

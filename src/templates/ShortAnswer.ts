@@ -16,10 +16,10 @@ export default function ShortAnswer(options: ShortAnswerOptions): string {
     children: [
       Title({
         type: "Short Answer",
-        title: options.title,
+        title: title,
       }),
       `<p>${TextType({
-        text: options.stem,
+        text: stem,
       })}</p>`,
       Answers({ choices: choices }),
       GlobalFeedback({ feedback: globalFeedback }),

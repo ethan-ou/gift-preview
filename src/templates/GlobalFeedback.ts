@@ -17,9 +17,10 @@ const Container = `
 `;
 
 export default function GlobalFeedback(options: GlobalFeedbackOptions): string {
-  return options.feedback !== null
+  const { feedback } = options;
+  return feedback !== null
     ? `<div style="${Container}">
-        <p>${TextType({ text: options.feedback })}</p>
+        <p>${TextType({ text: feedback })}</p>
       </div>`
     : ``;
 }
