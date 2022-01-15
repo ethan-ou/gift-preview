@@ -24,7 +24,7 @@
   "homepage": "https://github.com/ethan-ou/gift-preview#readme",
   "dependencies": {
     "@types/marked": "^1.1.0",
-    "marked": "^1.1.0",
+    "marked": "^4.0.10",
     "nanoid": "^3.1.10"
   },
   "devDependencies": {
