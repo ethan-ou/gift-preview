@@ -25,7 +25,7 @@
   "dependencies": {
     "@types/marked": "^1.1.0",
     "marked": "^1.1.0",
-    "nanoid": "^3.1.10"
+    "nanoid": "^3.1.31"
   },
   "devDependencies": {
     "@types/jest": "^26.0.0",
